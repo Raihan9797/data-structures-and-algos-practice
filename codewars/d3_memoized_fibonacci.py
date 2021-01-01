@@ -28,7 +28,9 @@ list_of_size_n = [None] * (n+1)
 
 6. Making use of decorators: Python 3 already has a functools.lru_cache which is basically a memoization decorator for any function!
 
-7. The better solution using wrapping or lru cache does not seem to work on VSCode Terminal and i'm not sure why
+7. The better solution using wrapping or lru cache does not seem to work on VSCode terminal
+- we have to create a specific file and then run it using
+$ python -m fib.py
 
 
 ## Non-technical ##
