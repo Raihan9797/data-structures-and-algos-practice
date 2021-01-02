@@ -12,3 +12,8 @@
 
 ## Day 3
 ### memoized fibonacci
+
+## Day 4
+### Remove Number
+
+### Redo Memoized Fibonacci
