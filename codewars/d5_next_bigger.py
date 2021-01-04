@@ -60,7 +60,6 @@ Then it became looking out for cases where the last char was a 0
 
 
 '''
-
 ## My Solution ##
 def next_bigger(n):
     '''
@@ -76,46 +75,41 @@ def next_bigger(n):
 
     3. sort from i + 1
     '''
-    string = str(n)
-    length = len(string)
-    digits = [int(char) for char in string]
+    chars = list(str(n))
+    length = len(chars)
     rhs = []
-    index = None
-    reversed_digits = digits[::-1]
-    for idx, curr in enumerate(reversed_digits[:-1]):
-        nextt = reversed_digits[idx+1]
-        # print(nextt, curr)
-        if (nextt < curr):
-            rhs.insert(0, curr)
-            index = idx + 1
+    lhs = []
+    # print(chars)
+    for i in range(length-2, -1, -1):
+        bwd = int(chars[i+1])
+        fwd = int(chars[i])
+        # print(fwd, bwd)
+        if fwd < bwd:
+            rhs = chars[i:]
+            lhs = chars[:i]
             break
-        else:
-            rhs.insert(0, curr)
-    print(rhs)
-
-    if index == None: return -1
-
-    # swap with next biggest number on rhs
-    swapper = reversed_digits[index]
-    new_rhs = sorted(rhs)
-    temp = None
-    for idx, num in enumerate(new_rhs):
-        if swapper < num:
-            temp = num
-            new_rhs[idx] = swapper
-            break
-    new_rhs.insert(0, temp)
-    for d in reversed_digits[index+1:]:
-        new_rhs.insert(0, d)
+    # print(rhs)
+    # print(lhs)
+    filtering = [x for x in rhs if x > rhs[0]]
+    # print(filtering)
+    if len(filtering) == 0: return -1
+    smallest_min = min(filtering)
+    # print(smallest_min)
+    rhs.remove(smallest_min)
+    sorted_rhs = sorted(rhs)
+    sorted_rhs.insert(0, smallest_min)
+    # print(sorted_rhs)
     
-    # print(new_rhs, temp)
-    # print(digits)
-    # print(reversed_digits[index+1:])
-    # print(index)
     
-    char_ans = [str(x) for x in new_rhs]
-    ans = int(''.join(char_ans))
-    return ans
+    ans_chars = lhs + sorted_rhs
+    # print(ans_chars)
+    
+    str_ans = ''.join(ans_chars)
+    # print(str_ans)
+    
+    int_ans = int(str_ans)
+    return -1 if int_ans == n else int_ans
+
 
 
 ## Better Solution ##
