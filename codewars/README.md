@@ -17,3 +17,9 @@
 ### Remove Number
 
 ### Redo Memoized Fibonacci
+
+## Day 5
+### Next Bigger* 
+
+## Day 6
+### Hashtag Generator (5kyu)
