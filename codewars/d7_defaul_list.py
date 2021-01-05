@@ -25,6 +25,10 @@ my_list = [1, 2, 3, 4, 5, 6]
 len(my_list) # 6
 my_list[-7] # error!
 
+4. reminded of vim search and replace:
+- %s/oldword/newword/gc
+- vscode doesn't highlight it though? might be because of my colour scheme
+
 ## Non-technical ##
 
 '''
