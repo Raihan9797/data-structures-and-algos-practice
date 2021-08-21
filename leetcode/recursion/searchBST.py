@@ -1,4 +1,6 @@
-from typing import Optional
+# https://leetcode.com/explore/learn/card/recursion-i/251/scenario-i-recurrence-relation/3233/
+
+from typing import Optional # still doesnt work
 
 # Definition for a binary tree node.
 class TreeNode:
@@ -6,9 +8,6 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-
-
-
 
 class Solution:
     def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
