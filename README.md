@@ -5,7 +5,7 @@ A place for me to store:
     Each question will include:
         1. Question description
         2. Input Output Example
-        3. What I personally learng from the code (technical and non-technical)
+        3. What I personally learnt from the code (technical and non-technical)
         4. My own solution
         5. A better solution (if i have found any)
 
