@@ -22,3 +22,5 @@ https://leetcode.com/explore/learn/card/recursion-i/251/scenario-i-recurrence-re
 def pascalTriangle(rowi: int, colj: int) -> int:
     ...
 ```
+
+4. Initializing int array in java: all the values will be initialized to 0!! [Source](https://www.geeksforgeeks.org/arrays-in-java/)
