@@ -24,3 +24,5 @@ def pascalTriangle(rowi: int, colj: int) -> int:
 ```
 
 4. Initializing int array in java: all the values will be initialized to 0!! [Source](https://www.geeksforgeeks.org/arrays-in-java/)
+
+5. Iterative version: replacing the old row with a new one; new idea I have never seen before. This ans got the entire row, but it should be possible to get an iterative version of pascals triangle
