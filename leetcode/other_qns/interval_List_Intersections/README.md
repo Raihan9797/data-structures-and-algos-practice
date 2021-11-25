@@ -12,12 +12,17 @@ The intersection of two closed intervals is a set of real numbers that are eithe
 
 # My explanation of the solution
 While firstList not empty and secondList not empty:
-    compare the elements of both List to find the interval
+    * compare the elements of both List to find the interval
+
     0. edge case: If the pairs clearly do not have intervals ie the start of one element is bigger than the end of the other element, increment the "smaller" element
+
     1. start interval is the biggest start val between the 2 pairs ie. max(f_start, s_start)
+
     2. end interval is the smallest end val between the 2 pairs. 
         increment to the next pair for the pair with the smaller end val so we need to compare and not just find min().
+
     3. append [start_interval, end_interval] to the list of answers
+
     4. continue till while criteria fails
 
 # Insight
