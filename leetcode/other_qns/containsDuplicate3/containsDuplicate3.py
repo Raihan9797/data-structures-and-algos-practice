@@ -1,5 +1,6 @@
 #from sortedcontainers import SortedList
 from collections import OrderedDict
+from typing import List
 
 class Solution:
     def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool:
@@ -23,9 +24,6 @@ class Solution:
                 #print(buckets)
         return False
                 
-            
-            
-            
         ### brute force..
         # for idx in range(len(nums)):
         #     for j in range(idx+1, idx+k+1):
@@ -39,3 +37,6 @@ class Solution:
         #         #print(nums[idx], nums[j])
         # return False
                 
+s = Solution()
+nums = [1,5,9,1,5,9], k = 2, t = 3
+print(s.containsNearbyAlmostDuplicate(nums, k, t)) # false
